@@ -1,4 +1,3 @@
-// content.js
 let hasInitialized = false;
 const observer = new MutationObserver(checkForContent);
 
@@ -153,8 +152,10 @@ async function handleUserQuery(query) {
     alert("Failed to save. Check console for details.");
   }
 }
-
-document.addEventListener('DOMContentLoaded', startObservation);
+document.addEventListener('DOMContentLoaded', () => {
+  startObservation();
+  checkForContent();
+});
 window.addEventListener('load', startObservation);
 document.addEventListener('visibilitychange', () => {
   if (!document.hidden) checkForContent();
