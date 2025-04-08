@@ -27,6 +27,6 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
     },
-    "privacy_policy": "https://github.com/your-username/your-repo/blob/main/privacy.md",
+    "privacy_policy": "https://raw.githubusercontent.com/champsheard/chromeExtention/refs/heads/main/privacy.md",
     "minimum_chrome_version": "88"
 }
